@@ -186,7 +186,7 @@ async function generateId(){
     });
     if(!put.ok) throw new Error('save');
 
-    document.getElementById('result-id').textContent = newId.toLocaleString();
+    document.getElementById('result-id').textContent = newId;
     document.getElementById('result').className = 'result show';
     document.getElementById('copy-btn').textContent = 'Copy to Clipboard';
     document.getElementById('copy-btn').className = 'copy-btn';
@@ -220,7 +220,7 @@ function renderHistory(ids){
   }
   const rows = ids.map(e=>`
     <tr>
-      <td class="id-num">${e.id.toLocaleString()}</td>
+      <td class="id-num">${e.id}</td>
       <td>${e.date}</td>
       <td>${e.generated_by||'—'}</td>
       <td>${e.note||'<span style="color:#b2bec3">—</span>'}</td>
