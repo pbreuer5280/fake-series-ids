@@ -1,4 +1,11 @@
 {
-  "last_id": 9990000,
-  "ids": []
+  "last_id": 9990001,
+  "ids": [
+    {
+      "id": 9990001,
+      "date": "2026-05-15",
+      "generated_by": "pbreuer5280",
+      "note": "This is for the series Hope for Healing"
+    }
+  ]
 }
